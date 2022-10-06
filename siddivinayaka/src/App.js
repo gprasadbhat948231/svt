@@ -1,8 +1,13 @@
 import './App.css';
+import Navbar from './Components/Navbar';
+import Footer from "./Components/Footer"
+import Allroutes from './Components/Allroutes';
 function App() {
   return (
     <div className="App">
-        <h1>SVT Started</h1>
+        <Navbar/>
+        <Allroutes/>
+        <Footer/>
     </div>
   );
 }
