@@ -1,17 +1,17 @@
-import Home from "../Components/home";
-import Aboutus from "../Pages/aboutus";
-import Contactus from "../Pages/contactus";
 import {Routes,Route} from "react-router-dom"
-import Login from "../Pages/login";
+import Home from "../Components/Home";
+import Aboutus from "../Pages/Aboutus";
+import Donation from "../Pages/Donation";
 import Poojas from "../Pages/Poojas";
+import Trustee from "../Pages/Trustee";
 function Allroutes(){
     return(
         <Routes>
             <Route path="/" element={<Home/>}></Route>
-            <Route path="/Poojas" element={<Poojas/>}></Route>
+            <Route path="/pooja" element={<Poojas/>}></Route>
             <Route path="/about" element={<Aboutus/>}></Route>
-            <Route path="/contact" element={<Contactus/>}></Route>
-            <Route path="/login" element={<Login/>}></Route>
+            <Route path="/trustee" element={<Trustee/>}></Route>
+            <Route path="/donation" element={<Donation/>}></Route>
         </Routes>
     )
 }
